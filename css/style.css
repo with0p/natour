@@ -42,16 +42,16 @@ body {
   position: relative;
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-.logo {
+.header__logo {
   height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -142,14 +142,14 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777;
   border-radius: 100vh;
   position: relative;
 }
 
-.btn-white::after {
+.btn--white::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -163,11 +163,11 @@ body {
   background-color: #fff;
 }
 
-.btn-white:hover::after {
+.btn--white:hover::after {
   transform: scaleX(1.3) scaleY(1.6);
   opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 1s;
 }
