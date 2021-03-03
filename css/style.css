@@ -76,8 +76,7 @@ body {
   color: transparent;
   transition: all 0.5s; }
   .heading-secondary:hover {
-    transform: skewX(-10deg);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+    transform: skewX(-10deg); }
 
 .heading-tert {
   font-size: 1.5rem;
@@ -158,7 +157,6 @@ body {
   position: relative; }
   .composition__photo {
     width: 60%;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
     position: absolute;
     outline-offset: 1rem;
     transition: transform 0.5s, outline 0.1s; }
@@ -173,11 +171,28 @@ body {
       left: 20%; }
     .composition__photo:hover {
       transform: scale(1.1);
-      box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.2);
       z-index: 100;
       outline: 0.5rem outset #7ed56f; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: all 0.2s; }
+  .feature-box:hover {
+    transform: translateY(-1rem);
+    background-color: rgba(255, 255, 255, 0.9); }
+    .feature-box:hover .feature-box__icon {
+      text-shadow: 2px 1px 5px rgba(126, 213, 111, 0.8); }
+  .feature-box__icon {
+    font-size: 6rem;
+    background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+    -webkit-background-clip: text;
+    color: transparent; }
 
 .header {
   height: 95vh;
@@ -186,10 +201,6 @@ body {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -233,3 +244,13 @@ body {
   background-color: #f7f7f7;
   margin-top: -20vh;
   padding: 25rem 0; }
+
+.section-features {
+  padding: 20rem 0;
+  margin-top: -8rem;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-size: cover;
+  background-position: top;
+  transform: skewY(-7deg); }
+  .section-features > * {
+    transform: skewY(7deg); }
