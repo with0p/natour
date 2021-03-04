@@ -5,6 +5,8 @@
     text-decoration: none;
     padding: 1.5rem 4rem;
     display: inline-block;
+    border-radius: 100vh;
+    position: relative;
     transition: all 0.2s ease-out;
   }
   &:hover {
@@ -27,22 +29,32 @@
   &--white {
     background-color: $color-white;
     color: $color-dark-grey;
-    border-radius: 100vh;
-    position: relative;
 
     &::after {
-      content: "";
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-      border-radius: 100vh;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      transition: all 0.4s;
       background-color: $color-white;
     }
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
   }
 }
 
