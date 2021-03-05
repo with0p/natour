@@ -474,6 +474,97 @@ body {
   .row .col-3-of-4 {
     width: calc( ((100% - 6rem* 3) / 4) * 3 + 2 *6rem); }
 
+.footer {
+  background-color: #777;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: #eee; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    height: 15rem; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 2rem; }
+  .footer__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.5s; }
+    .footer__link:link, .footer__link:visited {
+      color: #f7f7f7; }
+    .footer__link:hover, .footer__link:active {
+      color: #55c57a;
+      transform: skewX(-10deg); }
+  .footer__navigation, .footer__copyright {
+    display: inline-block;
+    border-top: 0.2rem solid #eee;
+    padding-top: 3rem; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  z-index: 200; }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#7ed56f, #28b485);
+  z-index: 100;
+  transform: scale(100); }
+
+.navigation__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 150; }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center; }
+
+.navigation__item {
+  margin: 1rem 0; }
+
+.navigation__link {
+  display: inline-block; }
+  .navigation__link:link, .navigation__link:visited {
+    font-size: 3rem;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 225%;
+    transition: all 0.5s; }
+  .navigation__link:hover, .navigation__link:active {
+    background-position: 100%;
+    color: #55c57a;
+    transform: translateX(1rem); }
+
 .section-about {
   background-color: #f7f7f7;
   margin-top: -20vh;
