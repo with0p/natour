@@ -4,7 +4,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: $color-dark-grey;
-  padding: 3rem;
 }
 
 .heading-primary {
@@ -19,6 +18,11 @@ body {
     font-size: 6rem;
     letter-spacing: 3.5rem;
     animation: moveInLeft 1s ease-out;
+
+    @include respond(phone) {
+      font-size: 5rem;
+      letter-spacing: 1rem;
+    }
   }
 
   &--sub {
@@ -27,6 +31,11 @@ body {
     letter-spacing: 1rem;
     font-weight: 700;
     animation: moveInRight 1s ease-out;
+
+    @include respond(phone) {
+      font-size: 1rem;
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -48,17 +57,34 @@ body {
   &:hover {
     transform: skewX(-10deg);
   }
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2rem;
+  }
 }
 
 .heading-tert {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 700;
+  @include respond(tab-port) {
+    font-size: 1.9rem;
+  }
+  @include respond(phone) {
+    font-size: 1.8rem;
+  }
 }
 
 .paragraph {
   font-size: 1.4rem;
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 1.8rem;
   }
 }

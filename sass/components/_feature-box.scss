@@ -6,6 +6,10 @@
   text-align: center;
   transition: all 0.2s;
 
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
   &:hover {
     transform: translateY(-1rem);
     background-color: rgba($color-white, 0.9);

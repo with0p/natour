@@ -6,17 +6,35 @@
     outline-offset: 1rem;
     transition: transform 0.5s, outline 0.1s;
 
+    @include respond(tab-port) {
+      position: relative;
+      float: left;
+      width: 33.333%;
+    }
+
     &--p1 {
       top: -2rem;
       left: 0;
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
     &--p2 {
       top: 2rem;
       right: 0;
+
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
     &--p3 {
       top: 10rem;
       left: 20%;
+
+      @include respond(tab-port) {
+        top: 0;
+        left: 0;
+      }
     }
     &:hover {
       transform: scale(1.1);
