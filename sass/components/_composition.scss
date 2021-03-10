@@ -1,7 +1,7 @@
 .composition {
   position: relative;
   &__photo {
-    width: 60%;
+    width: 65%;
     position: absolute;
     outline-offset: 1rem;
     transition: transform 0.5s, outline 0.1s;
@@ -17,6 +17,7 @@
       left: 0;
       @include respond(tab-port) {
         top: 0;
+        transform: scale(1.2);
       }
     }
     &--p2 {
@@ -24,7 +25,8 @@
       right: 0;
 
       @include respond(tab-port) {
-        top: 0;
+        top: -1rem;
+        transform: scale(1.3);
       }
     }
     &--p3 {
@@ -32,8 +34,9 @@
       left: 20%;
 
       @include respond(tab-port) {
-        top: 0;
+        top: 1rem;
         left: 0;
+        transform: scale(1.1);
       }
     }
     &:hover {
